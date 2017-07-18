@@ -1,6 +1,35 @@
 html
 	head
-		link(rel="stylesheet", href="style.css", type="text/css")
-		script(type="text/javascript", src="main.js")
-	body
-		h1 Image Search Abstraction Layer!
+		link(rel="stylesheet", href="/css/foundation.min.css", type="text/css")
+		link(rel="stylesheet", href="/css/style.css", type="text/css")
+	body.grid-container-padded
+		br
+		header
+			h3.text-center.title Image Search Abstraction Layer!
+		br
+
+		h4.subheader To search for images
+		hr
+		p Endpoint:	/api/imagesearch/ 
+		.callout.grid-container
+			.grid-x
+				span.shrink.cell= 'Basic:   ' 
+				a.auto.cell(href='/api/imagesearch/cat%20mouse')= base + '/api/imagesearch/cat%20mouse'
+
+			.grid-x
+				span.shrink.cell= 'Specific Page:   ' 
+				a.auto.cell(href='/api/imagesearch/cat%20mouse?offset=2')= base + '/api/imagesearch/cat%20mouse?offset=2'
+		br
+		h4.subheader To see previous queries
+		hr
+		p Endpoint:   /api/latest/ 
+		.callout.grid-container
+			.grid-x
+				span.shrink.cell= 'Url:   ' 
+				a.auto.cell(href='/api/latest')= base + '/api/latest'
+
+		footer.footer
+			p= "  "
+
+		script(type="text/javascript", src="/js/jquery.min.js")
+		script(type="text/javascript", src="/js/main.js")

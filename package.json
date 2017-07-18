@@ -1,20 +1,23 @@
 {
   "name": "image_search_abstraction_layer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Image search api - https://www.freecodecamp.org/challenges/image-search-abstraction-layer",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kate Morris",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.15.3",
     "foundation-sites": "^6.4.1",
+    "jquery": "^3.2.1",
     "mongoose": "^4.11.3",
-    "pug": "^2.0.0-rc.2"
+    "pug": "^2.0.0-rc.2",
+    "request": "^2.81.0"
   }
 }

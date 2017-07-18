@@ -1,0 +1,14 @@
+body {
+	font-size: 14px;
+}
+
+.callout {
+	width: 80%;
+	margin: auto;
+	height: auto;
+}
+
+.callout span {
+	font-weight: bold;
+	margin-right: 10px;
+}
